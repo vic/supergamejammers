@@ -24,19 +24,19 @@
 
 
 body { 
-  font-family: 'VT323';
+  font-family: 'VT323', 'Courier New', monospace;
   font-size: 1.5em;
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  font-family: 'PixelFlag';
+  font-family: 'PixelFlag', Monaco, 'Lucida Console', monospace;
   font-size: 2em;
 }
 
 h3 {
-  font-family: 'Pxlxxl';
+  font-family: 'Pxlxxl', Consolas, 'Andale Mono', monospace;
   font-size: 1.5em;
 }
 
@@ -46,13 +46,14 @@ section {
 }
 
 section.main { 
-  background-color: black;
-  color: white;
+  background-color: #effcb9;
+  color: black;
 }
 
 section.steps {
-  background-color: blue; 
-  color: white;
+  background-color: #f8bbb1; 
+  color: black;
+  font-size: 0.8em;
 }
 
 section.steps span.label {
@@ -64,6 +65,9 @@ section.mentors {
   color: black;
 }
 
+.brief {
+  -word-color: #e04f60 #000000 #e04f60 #000000 #e04f60 #000000 #e04f60 #000000 #e04f60;
+}
 
 .img-circular{
  width: 200px;
