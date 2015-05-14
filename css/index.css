@@ -25,19 +25,27 @@
 
 body { 
   font-family: 'VT323', 'Courier New', monospace;
-  font-size: 1.5em;
+  font-size: 100%;
   margin: 0;
   padding: 0;
 }
 
+form {
+  font-family: VT323;
+}
+
+p {
+  font-size: 1.5em;
+}
+
 h2 {
   font-family: 'PixelFlag', Monaco, 'Lucida Console', monospace;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 h3 {
   font-family: 'Pxlxxl', Consolas, 'Andale Mono', monospace;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 section {
