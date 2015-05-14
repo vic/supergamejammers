@@ -12,5 +12,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "kube-framework": "~3.0.2",
+    "jquery": "~2.1.4",
+    "firebase": "~2.2.4"
+  }
 }
