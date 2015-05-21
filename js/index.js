@@ -1,6 +1,7 @@
 +(function () {
 
-
+  var app = angular.module("myApp", []);
+  
   var $ = jQuery;
   var firebase = new Firebase("https://supergamejammers.firebaseio.com/");
   var emails = firebase.child('emails');
