@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head class= "group">
   <title>Super Game Jammers</title>
-  <meta name="description" content="Un jam de videojuegos mensual muy bien estructurado, evento en la Ciudad de México."  />
-  <meta property="og:title" content="Super Game Jammers" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://supergamejammers.vg" />
-  <meta property="og:image" content="assets/meta1.png" />
-  <meta property="og:locale" content="es_MX" />
-  <meta property="og:description" content="Un jam de videojuegos mensual muy bien estructurado, evento en la Ciudad de México." />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="stylesheet" href="bower_components/kube-framework/css/kube.min.css" />
   <link rel="stylesheet" href="css/index.css" />
+
+  <nav class="navbar navbar-left">
+        <ul>
+            <li>FB</li>
+            <li>TW</li>
+            <li>Current: Grape Jam</li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-right">
+        <ul>
+            <li>Apply now!</li>
+            <li>Become a patron!</li>
+        </ul>
+    </nav>
 
   <script src="bower_components/lodash/lodash.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -36,127 +43,32 @@
     <div class="units-row text-centered">
       <div class="unit-80 unit-centered">
 
-        <p>
+        <div>
           We want to host Mexico City's<strong> biggest game jam</strong>
-          <br/>
-          to gather enthusiasts and creatives from different fields<br/>
+        </div>
+        <div>
+          to gather enthusiasts and creatives from different fields
+        </div>
+        <div>
           <strong><span style="color:#ccd8ba">MUSIC</span> // <span style="color:#ccd8ba">VISUALS</span> // <span style="color:#ccd8ba">PROGRAMMING</span> // <span style="color:#ccd8ba">NARRATIVE</span> // <span style="color:#ccd8ba">GAME DESIGN</span></strong>
-          <br/>
-          to <strong>develop stunning projects</strong> for 48 hours and <br />
+        </div>
+        <div>
+          to <strong>develop stunning projects</strong> for 48 hours and
+        </div>
+        <div>
           grow <strong>a community of talents</strong> that learns from its members.
-        </p>
+        </div>
+
+    </div>
+      
+      <a href="/apply.html">
+        <img height="25%" width="25%" src= "assets/button-apply.png"/>
+      </a>
+
 
       </div>
-
-      <div class="unit-centered unit-60">
-        <form id="registration">
-
-          <div class='thanks'>
-            Thanks for registering
-          </div>
-
-          <fieldset>
-
-            <div>
-              <label for="name">What is your name?</label>
-              <input id="name" type="text" name="name" placeholder="Luigi Mario" />
-            </div>
-
-            <div>
-              <label for="email">What is your email?</label>
-              <input id="email" type="email" name="email" placeholder="awesome@gamer.net" />
-            </div>
-            
-            <div>
-              <label for="phone">What is your phone number?</label>
-              <input id="phone" type="text" name="phone" placeholder="0000 0000" />
-            </div>
-
-            <div>
-              <label for="about">Tell us about you.</label>
-              <textarea id="about" name="about" rows=10 cols=40></textarea>
-            </div>
-
-            <div>
-              <label for="occupation">What do you do?</label>
-              <textarea id="occupation" name="occupation" rows=10 cols=40></textarea>
-            </div>
-
-            <div>
-              <label for="from">Where are you from?</label>
-              <input id="from" name="from" type="text" placeholder="Omicron Persei 8" />
-            </div>
-
-            <div>
-              <label for="links">Share us links to your work (games websites, Github, GDrive, Dropbox...).</label>
-              <textarea id="links" name="links" rows=10 cols=40></textarea>
-            </div>
-
-            <div>
-              <label for="why">Why do you decided to develop games?</label>
-              <textarea id="why" name="why" rows=10 cols=40></textarea>
-            </div>
-
-            <div>
-              <label for="expecting">What are you expecting from this jam?</label>
-              <textarea id="expecting" name="expecting" rows=10 cols=40></textarea>
-            </div>
-
-            <div>
-              <label for="passion">Why are you passionate about videogames?</label>
-              <textarea id="passion" name="passion" rows=10 cols=40></textarea>
-            </div>
-
-            <div>
-              <label for="favgame[0]">Which are the three games you love the most?</label>
-
-              <ul>
-                <li><input type="text" name="favgame_0" placeholder="Super Mario Bros" /></li>
-                <li><input type="text" name="favgame_1" placeholder="Tower Fall" /></li>
-                <li><input type="text" name="favgame_2" placeholder="Halo" /></li>
-              </ul>
-              <label for="favgamewhy">Why are these your favorite games?</label>
-              <textarea id="favgamewhy" name="favgamewhy" rows=10 cols=40></textarea>
-            </div>
-
-            <div>
-              <label for="playing">What are you currently playing?</label>
-              <textarea id="playing" name="playing" rows=10 cols=40></textarea>
-            </div>
-
-            <div>
-              <label>Which are your skills?</label>
-              <ul>
-                <li><label><input type="checkbox" name="skills_music">Music</label></li>
-                <li><label><input type="checkbox" name="skills_vis2d">Visuals 2D</label></li>
-                <li><label><input type="checkbox" name="skills_vis3d">Visuals 3D</label></li>
-                <li><label><input type="checkbox" name="skills_gamedesign">Game Design</label></li>
-                <li><label><input type="checkbox" name="skills_cocos">Cocos IDE</label></li>
-                <li><label><input type="checkbox" name="skills_unity2d">Unity 2D</label></li>
-                <li><label><input type="checkbox" name="skills_unity3d">Unity 3D</label></li>
-                <li><label><input type="checkbox" name="skills_corona">Corona SDK</label></li>
-                <li><label><input type="checkbox" name="skills_ludonarrative">Ludonarrative (Narrative for games)</label></li>
-                <li>
-                   <label for="skills_other">Any other?</label>
-                   <textarea id="skills_other" name="skills_other" rows=10 cols=40></textarea>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <label for="dreamgame">Describe with keywords your dream game (ex. goth, detectives, third-person, awesome music).</label>
-              <textarea id="dreamgame" name="dreamgame" rows=10 cols=40></textarea>
-            </div>
-
-            <button class='btn' type="submit">Reserva tu lugar</button>  
-          </fieldset>
-
-        </form>
-      </div>
-
     
-      <!-- <div id="SurveyInfo" class="unit-centered"><script src="https://www.smartsurvey.co.uk/s/r/jsEmbed.aspx?i=7RSQY&w=400&h=600&z=1"></script></div>
-    </div> -->
+
 
       <div class="units-row">
         <div class="unit-push-30 unit-40"><span><a href="http://facebook.com/SUPERGameJammers"><img width="15%" height="15%" src='assets/fb.png' /></a></span>
@@ -164,7 +76,7 @@
         <div class="unit-push-20 unit-40"><span><a href="http://twitter.com/GameJammers"><img width="13%" height="13%" src='assets/tw.png' /></a></span></div>
       </div>
 
-      </div>
+      
   </section>
 
 
