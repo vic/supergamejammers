@@ -14,9 +14,10 @@
   <link rel="stylesheet" href="bower_components/kube-framework/css/kube.min.css" />
   <link rel="stylesheet" href="css/index.css" />
 
+  <script src="bower_components/lodash/lodash.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/firebase/firebase.js"></script>
-  <script src="kerning.js"></script>
+  <script src="bower_components/kerning.js/kerning.js"></script>
   <script src="js/index.js"></script>
 
 </head>
@@ -44,12 +45,111 @@
 
       </div>
 
-      <!-- <div class="unit-centered unit-60">
-        <form id="reserve">
-          <input type="email" placeholder="Tu email" />
-          <button class='btn' type="submit">Reserva tu lugar</button>  
+      <div class="unit-centered unit-60">
+        <form id="registration">
+
+          <div class='thanks'>
+            Thanks for registering
+          </div>
+
+          <fieldset>
+
+            <div>
+              <label for="name">What is your name?</label>
+              <input id="name" type="text" name="name" placeholder="Luigi Mario" />
+            </div>
+
+            <div>
+              <label for="email">What is your email?</label>
+              <input id="email" type="email" name="email" placeholder="awesome@gamer.net" />
+            </div>
+            
+            <div>
+              <label for="phone">What is your phone number?</label>
+              <input id="phone" type="text" name="phone" placeholder="0000 0000" />
+            </div>
+
+            <div>
+              <label for="about">Tell us about you.</label>
+              <textarea id="about" name="about" rows=10 cols=40></textarea>
+            </div>
+
+            <div>
+              <label for="occupation">What do you do?</label>
+              <textarea id="occupation" name="occupation" rows=10 cols=40></textarea>
+            </div>
+
+            <div>
+              <label for="from">Where are you from?</label>
+              <input id="from" name="from" type="text" placeholder="Omicron Persei 8" />
+            </div>
+
+            <div>
+              <label for="links">Share us links to your work (games websites, Github, GDrive, Dropbox...).</label>
+              <textarea id="links" name="links" rows=10 cols=40></textarea>
+            </div>
+
+            <div>
+              <label for="why">Why do you decided to develop games?</label>
+              <textarea id="why" name="why" rows=10 cols=40></textarea>
+            </div>
+
+            <div>
+              <label for="expecting">What are you expecting from this jam?</label>
+              <textarea id="expecting" name="expecting" rows=10 cols=40></textarea>
+            </div>
+
+            <div>
+              <label for="passion">Why are you passionate about videogames?</label>
+              <textarea id="passion" name="passion" rows=10 cols=40></textarea>
+            </div>
+
+            <div>
+              <label for="favgame[0]">Which are the three games you love the most?</label>
+
+              <ul>
+                <li><input type="text" name="favgame_0" placeholder="Super Mario Bros" /></li>
+                <li><input type="text" name="favgame_1" placeholder="Tower Fall" /></li>
+                <li><input type="text" name="favgame_2" placeholder="Halo" /></li>
+              </ul>
+              <label for="favgamewhy">Why are these your favorite games?</label>
+              <textarea id="favgamewhy" name="favgamewhy" rows=10 cols=40></textarea>
+            </div>
+
+            <div>
+              <label for="playing">What are you currently playing?</label>
+              <textarea id="playing" name="playing" rows=10 cols=40></textarea>
+            </div>
+
+            <div>
+              <label>Which are your skills?</label>
+              <ul>
+                <li><label><input type="checkbox" name="skills_music">Music</label></li>
+                <li><label><input type="checkbox" name="skills_vis2d">Visuals 2D</label></li>
+                <li><label><input type="checkbox" name="skills_vis3d">Visuals 3D</label></li>
+                <li><label><input type="checkbox" name="skills_gamedesign">Game Design</label></li>
+                <li><label><input type="checkbox" name="skills_cocos">Cocos IDE</label></li>
+                <li><label><input type="checkbox" name="skills_unity2d">Unity 2D</label></li>
+                <li><label><input type="checkbox" name="skills_unity3d">Unity 3D</label></li>
+                <li><label><input type="checkbox" name="skills_corona">Corona SDK</label></li>
+                <li><label><input type="checkbox" name="skills_ludonarrative">Ludonarrative (Narrative for games)</label></li>
+                <li>
+                   <label for="skills_other">Any other?</label>
+                   <textarea id="skills_other" name="skills_other" rows=10 cols=40></textarea>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <label for="dreamgame">Describe with keywords your dream game (ex. goth, detectives, third-person, awesome music).</label>
+              <textarea id="dreamgame" name="dreamgame" rows=10 cols=40></textarea>
+            </div>
+
+            <button class='btn' type="submit">Reserva tu lugar</button>  
+          </fieldset>
+
         </form>
-      </div> -->
+      </div>
     
       <div id="SurveyInfo" class="unit-centered"><script src="https://www.smartsurvey.co.uk/s/r/jsEmbed.aspx?i=7RSQY&w=400&h=600&z=1"></script></div>
     </div>

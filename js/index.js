@@ -1,29 +1,31 @@
 +(function () {
 
-
   var $ = jQuery;
   var firebase = new Firebase("https://supergamejammers.firebaseio.com/");
   var emails = firebase.child('emails');
+  var registrations = firebase.child('registrations');
 
+  function formValues (form) {
+    return _.object(_.map($(form).serializeArray(), _.values))
+  }
 
-  $(function () {
-
-    $('#reserve').on('submit', function (e) {
-
+  function submitReservation (e) {
       e.preventDefault();
       e.stopPropagation();
 
-      var input = $(this).find('input[type=email]');
-      var email = input.val();
+      var data = formValues(this);
+      registrations.push(data);
 
-      emails.push(email);
+      $(this).find('fieldset').hide();
+      $(this).find('.thanks').show();
+  }
 
-      input.val('');
+  function init () {
+    $(this).find('.thanks').hide();
+    $('#registration').on('submit', submitReservation);
+  }
 
-
-    })
-
-  })
+  $(init);
 
 
 
