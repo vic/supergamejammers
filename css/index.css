@@ -28,6 +28,7 @@ body {
   font-size: 100%;
   margin: 0;
   padding: 0;
+  font-color: #272727;
 }
 
 form {
@@ -54,14 +55,18 @@ section {
 }
 
 section.main { 
-  background-color: #AB8BD8;
+  background-color: #9da381;
   color: black;
+  box-shadow: 0px 5px 5px 5px #57604d;
+  margin-bottom: 8px;
 }
 
 section.steps {
-  background-color: #AB8BD8; 
+  background-color: #42423b; 
   color: black;
   font-size: 0.8em;
+  box-shadow: 0px 5px 5px 5px #272727;
+  margin-bottom: 8px;
 }
 
 section.steps span.label {
@@ -69,8 +74,10 @@ section.steps span.label {
 }
 
 section.mentors {
-  background-color: #AB8BD8;
+  background-color: #9da381;
   color: black;
+  box-shadow: 0px 5px 5px 5px #57604d;
+  margin-bottom: 8px;
 }
 
 .brief {
