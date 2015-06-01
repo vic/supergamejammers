@@ -1,10 +1,6 @@
 {
   "name": "firebase",
-<<<<<<< HEAD
   "version": "2.2.5",
-=======
-  "version": "2.2.4",
->>>>>>> origin/master
   "homepage": "https://firebase.com",
   "authors": [
     "Firebase <operations@firebase.com>"

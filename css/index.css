@@ -80,6 +80,19 @@ section.mentors {
   margin-bottom: 8px;
 }
 
+#registration label {
+  display: block;
+  margin-top: 20px;
+}
+
+#registration li {
+  list-style: none;
+}
+
+#registration input[type=checkbox] {
+  margin-right: 10px;
+}
+
 .brief {
   -word-color: #e04f60 #000000 #e04f60 #000000 #e04f60 #000000 #e04f60 #000000 #e04f60;
 }
