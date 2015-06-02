@@ -31,6 +31,9 @@ body {
   font-color: #272727;
 }
 
+img {
+  image-rendering:pixelated;
+}
 form {
   font-family: VT323;
 }
