@@ -1,4 +1,6 @@
 
+// FONTS
+
 @font-face {
   font-family: 'VT323';
   src: url('../fonts/VT323-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/VT323-Regular.woff') format('woff'), url('../fonts/VT323-Regular.ttf')  format('truetype'), url('../fonts/VT323-Regular.svg#VT323-Regular') format('svg');
@@ -22,9 +24,40 @@
 }
 
 
+// STYLES
+
+* {
+  font-family: 'Squada One', monospace;
+}
+
+#intro {
+  background-color: rgb(155,166,129);
+  color: rgb(41, 41, 41);
+  border-color: rgb(208, 221, 183);
+  border-width: 8px;
+  border-style: solid;
+  padding: 20px;
+  text-shadow: 0px 3px 2px #D0DDB7;
+  
+}
+
+#intro-border {
+  border-color: rgb(41, 41, 41);
+  border-width: 8px;
+  border-style: solid;
+  
+}
+
+#intro-border-border {
+  border-color: rgb(208, 221, 183);
+  border-width: 8px;
+  border-style: solid;
+  width: 50%;
+  box-shadow: 0px 8px 0px #5D664D;
+}
 
 body { 
-  font-family: 'VT323', 'Courier New', monospace;
+  font-family: 'Squada One', monospace;
   font-size: 100%;
   margin: 0;
   padding: 0;
@@ -32,8 +65,11 @@ body {
 }
 
 img {
-  image-rendering:pixelated;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
 }
+
 form {
   font-family: VT323;
 }
